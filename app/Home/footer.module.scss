@@ -1,0 +1,18 @@
+.Container {
+  @apply py-10;
+  background: #edf2f8;
+}
+
+.footer_container {
+  @apply grid gap-8;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-items: center;
+}
+
+.Link_parent {
+  @apply flex flex-col;
+
+  & > a {
+    @apply py-2 text-xl md:text-2xl;
+  }
+}

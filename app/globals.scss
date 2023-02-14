@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%; /* (10 / 16) = 0.625 [62.5] */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+  // background: #edf2f8;
+  overflow-x: hidden;
+}
+
+.container_layout {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+// header banner
+
+.main {
+  position: relative;
+  background: url('/bgIMG.png');
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.fade-in {
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}

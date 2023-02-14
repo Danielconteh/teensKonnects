@@ -1,0 +1,35 @@
+.card_container {
+  @apply grid p-8 gap-8 md:gap-12 md:px-12 md:py-12;
+
+  // =======;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  @media (max-width: 35em) {
+    @apply p-4;
+    grid-template-columns: 1fr;
+  }
+}
+
+// ============================
+// ============================
+.Second_Card_Container {
+  @apply grid px-3 py-5 gap-8 md:gap-8 md:px-16 md:py-12;
+
+  // =======;
+  grid-template-columns: 1fr 0.85fr;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+
+  // 768
+  @media (max-width: 48em) {
+    @apply gap-3;
+    width: 90%;
+  }
+
+  // 250px
+  @media (max-width: 15.625em) {
+    @apply gap-x-0 gap-y-8;
+    width: 98%;
+  }
+}
