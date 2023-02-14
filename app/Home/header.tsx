@@ -58,10 +58,16 @@ const Header = () => {
       <main className={`${Style.header_container} container_layout`}>
         {/* nav bar [logo and register-button] */}
 
+        {/* =================
+
+
+
+          ========================== */}
+
         <nav className={Style.nav_container}>
           <Link href='/'>
             <Image
-              className='h-12 w-12 md:h-16 md:w-16'
+              className='ml-4 md:ml-8 h-12 w-12 md:h-16 md:w-16'
               src='/logo.png'
               alt='logo'
               width={1000}
@@ -70,11 +76,19 @@ const Header = () => {
             />
           </Link>
 
-          <div className='py-8'>
-            {/* <IoLanguageOutline/> */}
-            <p>language</p>
+          <div
+            className='mr-4 md:mr-8 bg-blue-600 inline-block text-white font-semibold rounded-lg 
+             text-xl md:text-2xl text-center'
+          >
+            <button className='capitalize px-4 py-5 '>sign up for free</button>
           </div>
         </nav>
+
+        {/* =================
+
+
+
+          ========================== */}
 
         <div className={Style.banner_text_container}>
           {/* banner text => framer-motion */}
@@ -84,7 +98,7 @@ const Header = () => {
               initial={{ x: -60, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className='capitalize text-2xl md:text-4xl lg:text-5xl tracking-wider pb-2 md:pb-4 '
+              className='font-bold capitalize text-[1.35rem] md:text-3xl lg:text-5xl tracking-wider md:pb-4 '
             >
               Welcome To TeenKonnect
             </motion.h1>
@@ -93,7 +107,7 @@ const Header = () => {
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className='text-2xl md:text-3xl py-6 font-normal capitalize'
+              className='text-2xl md:text-3xl py-4 font-normal capitalize w-1/2 md:w-full'
             >
               <p>Connecting teenagers and build network</p>
               <p className='py-4'>Share learning resource</p>
@@ -154,6 +168,11 @@ const Header = () => {
           </div>
         </div>
 
+        {/* =================
+
+
+
+          ========================== */}
         {/* background image  */}
 
         <Image

@@ -12,6 +12,12 @@ type ArrData = {
   par: string
 }
 
+type ArrDate2 = {
+  par: String
+  img: String
+  type: number
+}
+
 const arr: ArrData[] = [
   {
     header: 'Mission',
@@ -34,12 +40,6 @@ const arr: ArrData[] = [
     par: 'Exchange information and ideas among people with a common profession or special interest.',
   },
 ]
-
-type ArrDate2 = {
-  par: String
-  img: String
-  type: number
-}
 
 const arr2: ArrDate2[] = [
   {

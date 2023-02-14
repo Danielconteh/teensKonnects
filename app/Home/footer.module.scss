@@ -4,9 +4,13 @@
 }
 
 .footer_container {
-  @apply grid gap-8;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  @apply grid gap-8 lg:px-0;
   justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: 50em) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .Link_parent {

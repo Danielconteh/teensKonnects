@@ -4,13 +4,6 @@ import { useState } from 'react'
 import Style from './footer.module.scss'
 
 export const Foot = () => {
-  // const [isLoading, setLoading] = useState(true)
-
-  // //  Image loading transition
-  // function loadingImagefnCb(...classes: string[]) {
-  //   return classes.filter(Boolean).join(' ')
-  // }
-
   return (
     <div className={Style.Container}>
       <div className={`${Style.footer_container} container_layout`}>
